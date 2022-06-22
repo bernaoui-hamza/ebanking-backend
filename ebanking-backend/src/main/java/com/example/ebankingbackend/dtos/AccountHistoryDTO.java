@@ -1,8 +1,10 @@
 package com.example.ebankingbackend.dtos;
 
-import java.util.List;
+import lombok.Data;
 
-public class accountHistoryDTO {
+import java.util.List;
+@Data
+public class AccountHistoryDTO {
     private String AccountId;
     private double balance;
     private String accountType;

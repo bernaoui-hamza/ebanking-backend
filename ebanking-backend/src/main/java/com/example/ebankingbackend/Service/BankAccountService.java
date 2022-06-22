@@ -40,4 +40,6 @@ public interface  BankAccountService {
      void deleteCustomer(Long customerId);
 
      List<AccountOperationDTO> accountHistory(String AccountId);
+
+     AccountHistoryDTO getAccountHistory(String accountId, int page, int size) throws BankAccountNotFoundException;
 }
